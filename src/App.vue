@@ -42,6 +42,12 @@
     </v-main>
 
     <v-avatar color="primary" size="56">123</v-avatar>
+    <v-btn
+        depressed
+        color="primary"
+      >
+        Primary
+      </v-btn>
 
   </v-app>
 

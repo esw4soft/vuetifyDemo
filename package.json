@@ -42,10 +42,8 @@
       "@vue/standard"
     ],
     "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {
-      "requireConfigFile": false
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile" : false
     }
   },
   "browserslist": [
