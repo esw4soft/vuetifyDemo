@@ -1,6 +1,7 @@
 # vuetify-demo
 test
 kastest
+kastest02
 ## Project setup
 ```
 npm install
