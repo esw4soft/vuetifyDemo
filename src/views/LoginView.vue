@@ -42,6 +42,9 @@ export default {
       // console.log(this.user.username, this.user.password)
       const signinApi = `${process.env.VUE_APP_API}admin/signin`
       this.$http.post(signinApi, this.user).then((res) => {
+        const { token, expired } = res.data
+        console.log(token, expired)
+        document.cookie = `hextoken=${token}; expires=${new Date(expired)}`
         console.log(res)
       })
     }
