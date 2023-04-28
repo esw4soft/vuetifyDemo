@@ -6,11 +6,6 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
     path: '/about',
     name: 'about',
     // route level code-splitting
@@ -27,6 +22,11 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: () => import('../views/DashboardView.vue')
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: HomeView
   }
 ]
 
