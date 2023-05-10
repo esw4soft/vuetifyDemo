@@ -48,7 +48,8 @@
       "requireConfigFile": false
     },
     "rules": {
-      "no-unused-vars": ["warn"]
+      "no-unused-vars": ["warn"],
+      "vue/valid-v-slot": ["error", { "allowModifiers": true }]
     }
   },
   "browserslist": [
