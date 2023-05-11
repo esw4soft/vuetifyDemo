@@ -80,8 +80,8 @@
               color="primary"
             >
               <v-list-item
-                v-for="(item, index) in nav"
-                :key="index" to="#"
+                v-for="item in nav"
+                :key="item.text" to="#"
               >
                 <v-list-item-icon>
                   <v-icon v-if="item.icon">{{ item.icon }}</v-icon>
