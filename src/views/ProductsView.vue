@@ -89,6 +89,12 @@
                       label="open"
                     ></v-text-field>
                   </v-col>
+                  <v-col
+                    cols="12"
+                    sm="6"
+                    md="4"
+                  >
+                  </v-col>
                 </v-row>
               </v-container>
             </v-card-text>
@@ -124,6 +130,14 @@
           </v-card>
         </v-dialog>
       </v-toolbar>
+    </template>
+    <template v-slot:item.open="{ item }">
+      <div v-if="item.open === true">
+        <div class="bgcolor_1 white--text rounded px-1 py-1 d-inline-block">啟用</div>
+      </div>
+      <div v-else>
+        <div class="red lighten-2 green--text text--accent-2 rounded px-1 py-1 d-inline-block">不啟用</div>
+      </div>
     </template>
     <template v-slot:item.actions="{ item }">
       <v-icon
@@ -236,7 +250,7 @@ export default {
           name: 'Eclair',
           price: 1259,
           countPrice: 26.0,
-          open: true
+          open: false
         },
         {
           category: 'asdasa',
@@ -250,7 +264,7 @@ export default {
           name: 'Gingerbread',
           price: 1549,
           countPrice: 64.0,
-          open: true
+          open: false
         },
         {
           category: 'tajjy',
@@ -271,14 +285,14 @@ export default {
           name: 'Honeycomb',
           price: 15912,
           countPrice: 62.0,
-          open: true
+          open: false
         },
         {
           category: 'tdf',
           name: 'Donut',
           price: 7159,
           countPrice: 56.0,
-          open: true
+          open: false
         },
         {
           category: 'asd99',
